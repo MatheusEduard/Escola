@@ -4,7 +4,7 @@ function operacoes(){
 	var primeiro, segundo, resultadosoma, resultadosub, resultadomult, resultadodiv;
 
 
- 	primeiro =parseInt( document.getElementById("primeiro").value); 
+ 	primeiro = parseInt( document.getElementById("primeiro").value); 
 	segundo = parseInt(document.getElementById("segundo").value);
 
 	//alert(primeiro);
