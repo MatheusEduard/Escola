@@ -35,7 +35,7 @@
 
 
 /////////////////////////////////////////////////////////////////
-//   FUNÇÃO QUE BUSCA DADOS DE UM PROFESSOR                    //                                      
+//   FUNÇÃO QUE BUSCA DADOS DE UM PROFESSOR                                                  
 /////////////////////////////////////////////////////////////////
 
 	function buscaProfessor($codigo){
@@ -53,5 +53,6 @@
 		}
 		return $professor;
 	}
+
 
 

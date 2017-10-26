@@ -62,6 +62,13 @@ function buscaAluno($codigo){
 
 	//print_r($busca);
 
+
+//////////////////////////////////////////////////////////////////
+// FUNÇÂO QUE SEPARA ALUNOS POR TURMA                           //
+//////////////////////////////////////////////////////////////////
+
+
+
 	function listaAlunosTurma($turma){
 
 
@@ -90,7 +97,6 @@ function buscaAluno($codigo){
 		}
 		 return $alunos;
 }
-
 
 
 

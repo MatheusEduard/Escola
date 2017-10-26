@@ -4,7 +4,7 @@
 	include "alunos.php";
 	$matricula = $_GET['cod'];
 
-	$professor = buscaAluno($matricula);
+	$aluno = buscaAluno($matricula);
 
 	?>
 	<article class="coluna80">
