@@ -7,7 +7,7 @@
 		<!-- conteudo principal -->
 	<article class="coluna80">
 		<section class="lista">
-		<h1>1Info1</h1>
+		<h1 class="letraTurma">1Info1</h1>
 			<ul>
 
 			<?php
@@ -31,7 +31,7 @@ foreach ($lista1 as $aluno) {
 		</section>
 
 			<section class="lista">
-		<h1>1Info2</h1>
+		<h1 class="letraTurma">1Info2</h1>
 			<ul>
 
 			<?php
@@ -54,7 +54,7 @@ foreach ($lista2 as $aluno) {
 		</section>
 
 			<section class="lista">
-		<h1>1Info3</h1>
+		<h1 class="letraTurma">1Info3</h1>
 			<ul>
 
 			<?php
