@@ -20,7 +20,8 @@ foreach ($lista1 as $oferta) {
 	$professor = buscaProfessor($oferta['cod_professor']);
 ?>
 	
-		<li><?=$disciplina['disciplina']?> - <?=$professor['nome'] ?></li>
+		<li><a><?=$disciplina['disciplina']?></a> - <a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome'] ?></a></li>
+
 	</div>
 <?php
 }
@@ -44,7 +45,8 @@ foreach ($lista2 as $oferta) {
 	$professor = buscaProfessor($oferta['cod_professor']);
 ?>
 	
-		<li><?=$disciplina['disciplina']?> - <?=$professor['nome'] ?></li>
+		<li><a><?=$disciplina['disciplina']?></a> - <a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome'] ?></a></li>
+
 	</div>
 <?php
 }
@@ -67,7 +69,7 @@ foreach ($lista1 as $oferta) {
 	$professor = buscaProfessor($oferta['cod_professor']);
 ?>
 	
-		<li><?=$disciplina['disciplina']?> - <?=$professor['nome'] ?></li>
+		<li><a><?=$disciplina['disciplina']?></a> - <a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome'] ?></a></li>
 	</div>
 <?php
 }
