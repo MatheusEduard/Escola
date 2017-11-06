@@ -1,0 +1,58 @@
+.corImpar{
+	background-color: white;
+}
+.corPar{
+	background-color: #00FFFF;
+}
+
+#titulo{
+    margin-left: 42%;
+}
+#inferior{
+	 margin-left: 34.5%;
+}
+
+#wow{
+    margin-left: 42.7%;
+}
+#tabela{
+	margin-left: 37.5%;
+}
+
+.foto{
+	width: 200px;
+	height: 200px;
+	margin-right: 100%;
+	float: left;
+}
+#nome{
+
+	font-size: 50px;
+}
+#email{
+
+	font-size: 25px;
+}
+
+#num{
+	font-size: 25px;
+}
+
+#data{
+	font-size: 25px;
+}
+
+#profi{
+	font-size: 25px;
+}
+
+table tr td a{
+	text-decoration: none;
+	color: black;
+
+}
+
+table tr td a:hover{
+	color:red;
+	background-color: #FFAAAA;
+}
