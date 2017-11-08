@@ -17,8 +17,18 @@ img{
 
 #nome_site{
 	margin-top: 2%;	
-	width: 85%;
+	width: 65%;
 	float: left;
+}
+
+#perfil{
+	margin-top: 2%;	
+	width: 20%;
+	float: left;
+}
+
+.tamanhobarra{
+	width: 86%;
 }
 
 .divider{

@@ -1,3 +1,7 @@
+<?php 
+	session_start();
+?>
+
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/completo.css">
@@ -9,6 +13,41 @@
 	<header>
 		<img src="imagens/logo.png" id="logo"/>
 		<h1 id="nome_site">Agenda de tarefas</h1>
+		<div id="perfil">
+<?php
+	//isset() - verifica se uma veriavel esta definida
+	if (isset($_SESSION['login'])) {// SE ESTIVER LOGADO
+		
+	
+?>
+		<!-- MENSAGEM QUANDO LOGADO -->
+			<p>Usuário: <?=$_SESSION['nome']?></p>
+			<a href="logout.php">Sair</a>
+
+			<!-- Form de Login -->
+
+<?php
+	}else{//CASO NAO ESTEJA LOGADO
+
+?>			
+			<form method="post" action="login.php">
+				<label for="login">Login</label>
+				<input type="text" name="login" class="tamanhobarra" autocomplete="off">
+				<br>
+
+				<label for="senha">Senha</label>
+				<input type="password" name="senha" class="tamanhobarra">
+				<br>
+				<br>
+
+				<input type="submit" value="Enviar Dados">
+			</form>
+			<!-- Form de Login-->
+<?php
+
+}
+?>			
+		</div>
 	</header>
 	<div class='divider'></div>
 	<!-- menu -->
