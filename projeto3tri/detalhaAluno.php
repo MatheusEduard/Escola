@@ -8,8 +8,12 @@
 
 	?>
 	<article class="coluna80">
-		<section class="foto">
-			<img src="<?=$aluno['foto']?>">
+		<section class="pequenas">
+			<img src="<?=$aluno['foto']?>" class="clicavel" id="img">
+		</section>
+		<section class="modal img escondido">
+			<section class="fechar">X</section>
+			<img src="<?=$aluno['foto']?>" class="grande">
 		</section>
 
 		<section class="dados">

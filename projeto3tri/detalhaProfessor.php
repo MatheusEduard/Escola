@@ -8,9 +8,13 @@
 	$professor = buscaProfessor($siape);
 
 	?>
-	<article class="coluna80">
-		<section class="foto">
-			<img src="<?=$professor['foto']?>">
+		<article class="coluna80">
+		<section class="pequenas">
+			<img src="<?=$professor['foto']?>" class="clicavel" id="img">
+		</section>
+		<section class="modal img escondido">
+			<section class="fechar">X</section>
+			<img src="<?=$professor['foto']?>" class="grande">
 		</section>
 
 		<section class="dados">

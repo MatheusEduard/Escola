@@ -14,6 +14,14 @@
 
 	include "professores.php";
 
+	if (isset($_SESSION['login'])) {
+		echo('<a href="formProfessor.php">Incluir Novo Professor</a>');
+
+	}
+	?>
+	<section id="separador"></section>
+	<?php
+
 $lista = listaProfessores();
 
 foreach ($lista as $professor) {

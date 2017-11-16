@@ -4,6 +4,8 @@
 
 <html>
 <head>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/completo.css">
 	<title>Todos professores</title>
 	<meta charset="utf-8">
@@ -12,10 +14,10 @@
 	<!-- cabeçalho -->
 	<header>
 		<img src="imagens/logo.png" id="logo"/>
-		<h1 id="nome_site">Agenda de tarefas</h1>
+		<h1 id="nome_site">Agenda de tarefas - IFC Araquari</h1>
 		<div id="perfil">
 <?php
-	//isset() - verifica se uma veriavel esta definida
+	//isset() - verifica se uma variavel esta definida
 	if (isset($_SESSION['login'])) {// SE ESTIVER LOGADO
 		
 	
@@ -30,17 +32,17 @@
 	}else{//CASO NAO ESTEJA LOGADO
 
 ?>			
-			<form method="post" action="login.php">
-				<label for="login">Login</label>
-				<input type="text" name="login" class="tamanhobarra" autocomplete="off">
-				<br>
+			<form id="formulario" method="post" action="login.php">
+				<label id="login" for="login">Login</label>
+				<input type="text" name="login" class="tamanhobarra1" autocomplete="off">
+				<div class="divider"></div>
 
-				<label for="senha">Senha</label>
-				<input type="password" name="senha" class="tamanhobarra">
-				<br>
-				<br>
+				<label id="senha" for="senha">Senha</label>
+				<input type="password" name="senha" class="tamanhobarra2">
+				
+				
 
-				<input type="submit" value="Enviar Dados">
+				<input class="enviar" type="submit" value="Enviar Dados">
 			</form>
 			<!-- Form de Login-->
 <?php
