@@ -10,22 +10,24 @@
 ?>
 	<article class="coluna80">
 		<section class="lista">
-			<h1 class="letraTurma">1Info1</h1>
+			<h1 id="titulo-turma1" class="letraTurma">1Info1 - Tarefas</h1>
 			<ul>
+				<section id="turma1" class="escondido">
 
-				<?php
+					<?php
 
-					foreach ($lista1 as $oferta) {
-						$disciplina = buscaDisciplina($oferta['cod_disciplina']);
-						$professor = buscaProfessor($oferta['cod_professor']);
-				?>
-		
-				<li><a><?=$disciplina['disciplina']?></a> - <a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome'] ?></a></li>
+						foreach ($lista1 as $oferta) {
+							$disciplina = buscaDisciplina($oferta['cod_disciplina']);
+							$professor = buscaProfessor($oferta['cod_professor']);
+					?>
+			
+					<li><a><?=$disciplina['disciplina']?></a> - <a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome'] ?></a></li>
 
-				</div>
-				<?php
-					}
-				?>
+					</div>
+					<?php
+						}
+					?>
+				</section>
 			</ul>
 		</section>
 
@@ -35,22 +37,24 @@
 ?>
 	
 		<section class="lista">
-		<h1 class="letraTurma">1Info2</h1>
+		<h1 id="titulo-turma1" class="letraTurma">1Info2 - Tarefas</h1>
 			<ul>
+				<section id="turma1" class="escondido">
 
-				<?php
+					<?php
 
-					foreach ($lista2 as $oferta) {
-						$disciplina = buscaDisciplina($oferta['cod_disciplina']);
-						$professor = buscaProfessor($oferta['cod_professor']);
-				?>
-			
-				<li><a><?=$disciplina['disciplina']?></a> - <a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome'] ?></a></li>
+						foreach ($lista2 as $oferta) {
+							$disciplina = buscaDisciplina($oferta['cod_disciplina']);
+							$professor = buscaProfessor($oferta['cod_professor']);
+					?>
+				
+					<li><a><?=$disciplina['disciplina']?></a> - <a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome'] ?></a></li>
 
-						</div>
-				<?php
-					}
-				?>
+							</div>
+					<?php
+						}
+					?>
+				</section>
 			</ul>
 		</section>
 		<?php
@@ -58,22 +62,24 @@
 		?>
 
 	<section class="lista">
-		<h1 class="letraTurma">1Info3</h1>
+		<h1 id="titulo-turma1" class="letraTurma">1Info3 - Tarefas</h1>
 			<ul>
+				<section id="turma1" class="escondido">
 
-				<?php
+					<?php
 
-					foreach ($lista1 as $oferta) {
-						$disciplina = buscaDisciplina($oferta['cod_disciplina']);
-						$professor = buscaProfessor($oferta['cod_professor']);
-				?>
-	
-				<li><a><?=$disciplina['disciplina']?></a> - <a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome'] ?></a></li>
-				
-						</div>
-				<?php
-					}
-				?>
+						foreach ($lista1 as $oferta) {
+							$disciplina = buscaDisciplina($oferta['cod_disciplina']);
+							$professor = buscaProfessor($oferta['cod_professor']);
+					?>
+		
+					<li><a><?=$disciplina['disciplina']?></a> - <a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome'] ?></a></li>
+					
+							</div>
+					<?php
+						}
+					?>
+				</section>
 			</ul>
 		</section>
 		</article>

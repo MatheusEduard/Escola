@@ -16,5 +16,10 @@
 	$(".fechar").click(function(){
 		$(".modal").addClass('escondido');
 	})
+	$("#item").click(function(){
+		var id;
+		id = $(this).attr('id');
+		$("."+id).addClass('item.ativo');
+	})
 
 })
