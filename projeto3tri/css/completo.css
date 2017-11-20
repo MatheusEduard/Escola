@@ -8,6 +8,9 @@ img{
 	width: 100%;
 }
 
+#cor{
+	background-color: #B6E4E1;
+}
 /*topo*/
 #logo{
 	width: 15%;
@@ -43,19 +46,24 @@ img{
 .aparecendo{
 
 }
-.enviar{
+#enviar{
 	margin-top: 10%;
+	border-radius: 30px;
+	border-color:#67B9BD;
+	background-color: white;
 }
 
-.tamanhobarra1{
-	
+#tamanhobarra1{
+	border-radius: 30px;
 	float: left;
+	border-color:#67B9BD; 
 }
 
-.tamanhobarra2{
-	
+#tamanhobarra2{
+	border-radius: 30px;
 	float: left;
 	margin-top:3%;
+	border-color:#67B9BD; 
 }
 
 .divider{
@@ -73,13 +81,13 @@ img{
 	width: 14%;
 	float: left;
 	font-size: 115%;
-	border: 1px solid #aaa;
+	border: 1px solid #67B9BD;
 	text-align: center;
 	padding: 1.2%;
 }
 
 .item.ativo{
-	background-color: #eee;
+	background-color: #A6DEE1;
 }
 
 a{
@@ -87,7 +95,7 @@ a{
 }
 
 .item.menu:hover{
-	background-color: #ccc;
+	background-color: #67B9BD;
 }
 
 /*conteudo geral*/
@@ -100,7 +108,7 @@ a{
 .coluna80{
 	width: 80%;
 	float: left;
-	border: 1px solid #aaa;
+	border: 1px solid #67B9BD;
 	padding: 2%;
 }
 
@@ -126,8 +134,9 @@ a{
 .lista{
 	width: 32%;
 	float: left;
-	border: 1px solid #ddd;
-	margin-right: 1%
+	border: 1px solid #67B9BD;
+	margin-right: 1%;
+	background-color: #67B9BD;
 }
 
 .letraTurma{

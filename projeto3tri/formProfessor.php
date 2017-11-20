@@ -8,7 +8,7 @@ include 'cabecalho.php';
 <body>
 <div class="divider"></div>
 	<section>
-		<form method="POST" action="insereProfessor.php">
+		<form method="POST" action="insereProfessor.php" enctype="multipart/form-data">
 		<label for="siape">Siape</label>
 		<p><input type="text" name="siape"></p>
 
@@ -19,7 +19,7 @@ include 'cabecalho.php';
 		<p><input type="text" name="email"></p>
 
 		<label for="img">Caminho para a imagem    Ex: imagens/nome.jpg</label>
-		<p><input type="text" name="img"></p>
+		<p><input type="file" name="img"></p>
 
 
 		<p><input type="submit" name="enviar" value="Enviar Dados"></p>		

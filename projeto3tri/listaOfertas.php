@@ -37,9 +37,9 @@
 ?>
 	
 		<section class="lista">
-		<h1 id="titulo-turma1" class="letraTurma">1Info2 - Tarefas</h1>
+		<h1 id="titulo-turma2" class="letraTurma">1Info2 - Tarefas</h1>
 			<ul>
-				<section id="turma1" class="escondido">
+				<section id="turma2" class="escondido">
 
 					<?php
 
@@ -62,9 +62,9 @@
 		?>
 
 	<section class="lista">
-		<h1 id="titulo-turma1" class="letraTurma">1Info3 - Tarefas</h1>
+		<h1 id="titulo-turma3" class="letraTurma">1Info3 - Tarefas</h1>
 			<ul>
-				<section id="turma1" class="escondido">
+				<section id="turma3" class="escondido">
 
 					<?php
 

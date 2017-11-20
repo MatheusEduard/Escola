@@ -10,7 +10,7 @@
 	<title>Todos professores</title>
 	<meta charset="utf-8">
 </head>
-<body>
+<body id="cor">
 	<!-- cabeçalho -->
 	<header>
 		<img src="imagens/logo.png" id="logo"/>
@@ -34,20 +34,35 @@
 ?>			
 			<form id="formulario" method="post" action="login.php">
 				<label id="login" for="login">Login</label>
-				<input type="text" name="login" class="tamanhobarra1" autocomplete="off">
+				<input type="text" name="login" id="tamanhobarra1" autocomplete="off">
 				<div class="divider"></div>
 
 				<label id="senha" for="senha">Senha</label>
-				<input type="password" name="senha" class="tamanhobarra2">
+				<input type="password" name="senha" id="tamanhobarra2">
 				
 				
 
-				<input class="enviar" type="submit" value="Enviar Dados">
+				<input id="enviar" type="submit" value="Enviar Dados">
 			</form>
 			<!-- Form de Login-->
 <?php
 
 }
+
+if($_GET['ativo'] == "proximasTarefas"){
+		$ativo1 = "ativo";
+	}elseif ($_GET['ativo'] == "todasTarefas") {
+		$ativo2 = "ativo";
+	}elseif ($_GET['ativo'] == "tarefasDici") {
+		$ativo3 = "ativo";
+	}elseif($_GET['ativo'] == "tarefasData"){
+		$ativo4 = "ativo";
+	}elseif ($_GET['ativo'] == "professores") {
+		$ativo5 = "ativo";
+	}elseif ($_GET['ativo'] == "colegas") {
+		$ativo6 = "ativo";
+}
+
 ?>			
 		</div>
 	</header>
@@ -55,12 +70,18 @@
 	<!-- menu -->
 	
 	<nav class="menu">
-		<a href=""><section id="item" class="item menu">Próximas tarefas</section></a>
-		<a href=""><section id="item" class="item menu">Todas Tarefas</section></a>
-		<a href="listaOfertas.php"><section id="item" class="item menu">Tarefas por disciplina</section></a>
-		<a href=""><section id="item" class="item menu">Tarefas por data</section></a>
-		<a href="listaProfessores.php"><section id="item" class="item menu">Professores</section></a>
-		<a href="listaAlunos.php"><section id="item" class="item menu">Colegas</section></a>
+		<a href="proximasTarefas.php?ativo=proximasTarefas"><section id="item" class="item menu <?=$ativo1?>">Próximas tarefas</section></a>
+
+		<a href="todasTarefas.php?ativo=todasTarefas"><section id="item" class="item menu <?=$ativo2?>">Todas Tarefas</section></a>
+
+		<a href="listaOfertas.php?ativo=tarefasDici"><section id="item" class="item menu <?=$ativo3?>">Tarefas por disciplina</section></a>
+
+		<a href="tarefasPorData.php?ativo=tarefasData"><section id="item" class="item menu <?=$ativo4?>">Tarefas por data</section></a>
+
+		<a href="listaProfessores.php?ativo=professores""><section id="item" class="item menu <?=$ativo5?>">Professores</section></a>
+
+		<a href="listaAlunos.php?ativo=colegas"><section id="item" class="item menu <?=$ativo6?>">Colegas</section></a>
+
 	</nav>
 	<div class='divider'></div>
 
