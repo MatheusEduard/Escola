@@ -21,7 +21,7 @@
 							$professor = buscaProfessor($oferta['cod_professor']);
 					?>
 			
-					<li><a><?=$disciplina['disciplina']?></a> - <a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome'] ?></a></li>
+					<li><a><?=$disciplina['disciplina']?></a>
 
 					</div>
 					<?php
@@ -48,7 +48,7 @@
 							$professor = buscaProfessor($oferta['cod_professor']);
 					?>
 				
-					<li><a><?=$disciplina['disciplina']?></a> - <a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome'] ?></a></li>
+					<li><a><?=$disciplina['disciplina']?></a> 
 
 							</div>
 					<?php
@@ -73,7 +73,7 @@
 							$professor = buscaProfessor($oferta['cod_professor']);
 					?>
 		
-					<li><a><?=$disciplina['disciplina']?></a> - <a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome'] ?></a></li>
+					<li><a><?=$disciplina['disciplina']?></a>
 					
 							</div>
 					<?php

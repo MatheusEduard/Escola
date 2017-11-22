@@ -1,8 +1,14 @@
 <?php
 include("cabecalho.php");
 
-$origem = $_FILES['foto']['tmp_name'];
-$destino = "imagens/professores/".$_FILES['foto']['name'];
+print_r($_FILES);
+
+$origem =$_FILES['img']['tmp_name'];
+
+$data = date('dmY');
+
+$destino = "imagens/professores/".$data.$_FILES['img']['name'];
+
 move_uploaded_file($origem, $destino);
 
 $siape = $_POST['siape'];
@@ -28,4 +34,4 @@ fclose($arquivo);
 include("rodape.php");
 
   ?>
- <meta http-equiv="refresh" content="0;URL=listaProfessores.php">  
+<!-- <meta http-equiv="refresh" content="50;URL=listaProfessores.php">  -->

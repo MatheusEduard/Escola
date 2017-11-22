@@ -7,7 +7,7 @@
 	$aluno = buscaAluno($matricula);
 
 	?>
-	<article class="coluna80">
+	<article class="coluna80detalha">
 		<section class="pequenas">
 			<img src="<?=$aluno['foto']?>" class="clicavel" id="img">
 		</section>
