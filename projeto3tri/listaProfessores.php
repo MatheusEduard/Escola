@@ -5,8 +5,8 @@
 ?>
 	<!-- conteudo principal -->
 	<article class="coluna80">
-		<section class="lista">
-		<h1>Lista dos Professores</h1>
+		<section class="listaProf">
+		<h1 id="centraListProf">Lista dos Professores</h1>
 			<ul>
 		<?php
 

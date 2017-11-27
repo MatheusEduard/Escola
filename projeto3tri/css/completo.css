@@ -150,9 +150,20 @@ a{
 	background-color: #67B9BD;
 }
 
+.listaProf{
+	width: 32%;
+	float: left;
+	border: 1px solid #67B9BD;
+	margin-right: 1%;
+	background-color: #67B9BD;
+	margin-left: 34%;
+}
+
+
 .letraTurma{
 	font-size: 35px;
     margin-left: 9%;
+    cursor: pointer;
 }
 
 #separador{
@@ -196,4 +207,16 @@ a{
 	cursor: pointer;
 	float: right;
 	width: 50px;
+}
+
+#centraListProf{
+	margin-left: 27%;
+}
+
+h2.accordion{ 
+	cursor: pointer; 
+}
+
+div.accordion{ 
+	display: none; 
 }

@@ -34,4 +34,4 @@ fclose($arquivo);
 include("rodape.php");
 
   ?>
-<!-- <meta http-equiv="refresh" content="50;URL=listaProfessores.php">  -->
+ <meta http-equiv="refresh" content="0;URL=listaProfessores.php">  

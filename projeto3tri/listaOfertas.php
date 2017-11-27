@@ -19,11 +19,15 @@
 						foreach ($lista1 as $oferta) {
 							$disciplina = buscaDisciplina($oferta['cod_disciplina']);
 							$professor = buscaProfessor($oferta['cod_professor']);
-					?>
-			
-					<li><a><?=$disciplina['disciplina']?></a>
+							
 
-					</div>
+					?>
+				
+					<li><h2 class="accordion"><?=$disciplina['disciplina']?></h2></li>
+						<div class="accordion">
+							<p><a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome']?></a></p>
+
+						</div>
 					<?php
 						}
 					?>
@@ -48,9 +52,11 @@
 							$professor = buscaProfessor($oferta['cod_professor']);
 					?>
 				
-					<li><a><?=$disciplina['disciplina']?></a> 
+					<li><h2 class="accordion"><?=$disciplina['disciplina']?></h2></li>
+						<div class="accordion">
+							<p><a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome']?></a></p>
 
-							</div>
+						</div>
 					<?php
 						}
 					?>
@@ -73,9 +79,11 @@
 							$professor = buscaProfessor($oferta['cod_professor']);
 					?>
 		
-					<li><a><?=$disciplina['disciplina']?></a>
-					
-							</div>
+					<li><h2 class="accordion"><?=$disciplina['disciplina']?></h2></li>
+						<div class="accordion">
+							<p><a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome']?></a></p>
+
+						</div>
 					<?php
 						}
 					?>

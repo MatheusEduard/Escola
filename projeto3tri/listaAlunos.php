@@ -19,6 +19,14 @@
 				<section id="turma1" class="escondido">
 
 					<?php
+					if (isset($_SESSION['login'])) {
+					echo('<a href="formAluno.php">Incluir Novo Aluno</a>');
+
+				}
+				?>
+				<section id="separador"></section>
+
+					<?php
 					foreach ($lista1 as $aluno) {
 					?>
 			
@@ -42,6 +50,13 @@
 
 				?>
 				<section id="turma2" class="escondido">
+					<?php
+					if (isset($_SESSION['login'])) {
+					echo('<a href="formAluno.php">Incluir Novo Aluno</a>');
+
+					}
+					?>
+					<section id="separador"></section>
 
 					<?php
 
@@ -68,6 +83,14 @@
 
 				?>
 					<section  id="turma3" class="escondido">
+
+						<?php
+					if (isset($_SESSION['login'])) {
+					echo('<a href="formAluno.php">Incluir Novo Aluno</a>');
+
+					}
+					?>
+					<section id="separador"></section>
 						<?php
 
 							foreach ($lista3 as $aluno) {
