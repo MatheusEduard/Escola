@@ -23,11 +23,12 @@
 
 					?>
 				
-					<li><h2 class="accordion"><?=$disciplina['disciplina']?></h2></li>
+					<li><h2 class="accordion"><?=$disciplina['disciplina']?></h2>
 						<div class="accordion">
 							<p><a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome']?></a></p>
 
 						</div>
+					</li>
 					<?php
 						}
 					?>
@@ -52,11 +53,12 @@
 							$professor = buscaProfessor($oferta['cod_professor']);
 					?>
 				
-					<li><h2 class="accordion"><?=$disciplina['disciplina']?></h2></li>
+					<li><h2 class="accordion"><?=$disciplina['disciplina']?></h2>
 						<div class="accordion">
 							<p><a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome']?></a></p>
 
 						</div>
+					</li>
 					<?php
 						}
 					?>
@@ -79,11 +81,12 @@
 							$professor = buscaProfessor($oferta['cod_professor']);
 					?>
 		
-					<li><h2 class="accordion"><?=$disciplina['disciplina']?></h2></li>
+					<li><h2 class="accordion"><?=$disciplina['disciplina']?></h2>
 						<div class="accordion">
 							<p><a href="detalhaProfessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome']?></a></p>
 
 						</div>
+					</li>
 					<?php
 						}
 					?>

@@ -20,7 +20,11 @@
 		 		$aluno['nome'] = $colunas[1];
 		 		$aluno['turma'] = $colunas[2];
 		 		$aluno['email'] = $colunas[3];
-		 		$aluno['foto'] = $colunas[4];
+		 		if(isset($colunas[4])){
+		 			$aluno['foto'] = $colunas[4];
+		 		}else{
+		 			$aluno['foto'] = 'imagens/pessoa.png';
+		 		}
 
 		 		$alunos[] = $aluno;
 
@@ -52,7 +56,11 @@ function buscaAluno($codigo){
 				$aluno['matricula'] = $colunas[0];
 				$aluno['turma'] = $colunas[2];
 				$aluno['email'] = $colunas[3];
-				$aluno['foto'] = $colunas[4];
+				if(isset($colunas[4])){
+		 			$aluno['foto'] = $colunas[4];
+		 		}else{
+		 			$aluno['foto'] = 'imagens/pessoa.png';
+		 		}
 			}
 		}
 		return $aluno;
@@ -87,7 +95,11 @@ function buscaAluno($codigo){
 			 		$aluno['nome'] = $colunas[1];
 			 		$aluno['turma'] = $colunas[2];
 			 		$aluno['email'] = $colunas[3];
-			 		$aluno['foto'] = $colunas[4];
+			 		if(isset($colunas[4])){
+			 			$aluno['foto'] = $colunas[4];
+			 		}else{
+			 			$aluno['foto'] = 'imagens/pessoa.png';
+			 		}
 
 			 		$alunos[] = $aluno;
 

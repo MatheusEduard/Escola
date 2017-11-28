@@ -16,7 +16,7 @@ if ($login == 'admin' and $senha == 'admin') {
 	$_SESSION['nome'] = "Administrador";
 	$_SESSION['login'] = "admin";
 	//redireciona para a pag de acesso restrito de ADM
-	echo('<meta http-equiv="refresh" content="2;url=listaProfessores.php">');
+	echo('<meta http-equiv="refresh" content="2;url=listaProfessores.php?ativo=professores">');
 
 
 }elseif($login == 'matheus' and $senha == 'uau'){
@@ -25,12 +25,12 @@ if ($login == 'admin' and $senha == 'admin') {
 	//redireciona para a pag de acesso restrito de ADM
 	$_SESSION['nome'] = "Matheus";
 	$_SESSION['login'] = "matheus";
-	echo('<meta http-equiv="refresh" content="2;url=listaProfessores.php">');
+	echo('<meta http-equiv="refresh" content="2;url=listaProfessores.php?ativo=professores">');
 
 }else{
 	echo("Dados Inválidos!");
 	//redireciona para a pag de login
-	echo ('<meta http-equiv="refresh" content="2;url=listaProfessores.php">');
+	echo ('<meta http-equiv="refresh" content="2;url=listaProfessores.php?ativo=professores">');
 }
 
 
