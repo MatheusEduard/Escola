@@ -6,7 +6,7 @@
 //////////////////////////////////////////////////////////////////////////////////////
 
 
-	function listaDiciplinas(){
+	function listaDisciplinas(){
 	$disciplina = array();
 	$dados = file("dados/disciplinas.csv");
 
@@ -111,4 +111,7 @@ function disciplinasPorProfessor($siape){
 		 return $ofertas;
 }
 
-//print_r(disciplinasPorProfessor(1578494));
+//print_r(disciplinasPorProfessor(1578494));,
+
+
+function professorDisciplina(){}

@@ -61,7 +61,9 @@ if($_GET['ativo'] == "proximasTarefas"){
 		$ativo5 = "ativo";
 	}elseif ($_GET['ativo'] == "colegas") {
 		$ativo6 = "ativo";
-}
+	}else{
+		$ativo7 = "ativo";
+	}
 
 ?>			
 		</div>
@@ -81,6 +83,8 @@ if($_GET['ativo'] == "proximasTarefas"){
 		<a href="listaProfessores.php?ativo=professores""><section id="item" class="item menu <?=$ativo5?>">Professores</section></a>
 
 		<a href="listaAlunos.php?ativo=colegas"><section id="item" class="item menu <?=$ativo6?>">Colegas</section></a>
+
+		<a href="listaDisciplinas.php?ativo=disciplina"><section id="item" class="item menu <?=$ativo7?>">Disciplinas</section></a>
 
 	</nav>
 	<div class='divider'></div>
