@@ -111,6 +111,21 @@ function buscaAluno($codigo){
 }
 
 
+function verificaCod($cod){
+	$dados = file('dados/disciplinas.csv');
+	foreach ($dados as $posicao => $linha) {
+		if($posicao != 0){
+			$colunas = explode(",", $linha);
+		if ($colunas[0]) == $cod {
+			echo ("<h2><b>Disciplina já existente, por favor tente de novo</b></h2>");
+			echo ('<meta http-equiv="refresh" content="3;url=listaDisciplinas.php?ativo=disciplina">');
+			
+		}
+
+	}
+}
+
+
 
 
 

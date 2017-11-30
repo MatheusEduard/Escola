@@ -1,10 +1,13 @@
 <?php
 include("cabecalho.php");
+include("alunos.php");
 
 if(isset($_SESSION['login'])){
+	
 
-	$siape = $_POST['codigo'];
+	$cod = $_POST['codigo'];
 	$nome = $_POST['nome'];
+	verificaCod($cod);
 	
 
 
