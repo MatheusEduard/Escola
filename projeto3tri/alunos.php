@@ -111,25 +111,21 @@ function buscaAluno($codigo){
 }
 
 
-function verificaCod($cod){
+function existeCod($cod){
+	$verifica = false;	
 	$dados = file('dados/disciplinas.csv');
 	foreach ($dados as $posicao => $linha) {
 		if($posicao != 0){
 			$colunas = explode(",", $linha);
-		if($colunas[0] == $cod){
-			$verifica = 1;
-		}else{
-			$verifica = 2;	
-		}
+			if($colunas[0] == $cod){
+				$verifica = true;
+			}
 			
-			
-
-		}
-		
+		}			
 	}
 	return $verifica;
 }
 
-//$teste = verificaCod(1);
+$teste = verificaCod(145);
 
-//print($teste);
+print($teste);

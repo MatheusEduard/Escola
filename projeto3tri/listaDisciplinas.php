@@ -15,7 +15,7 @@
 
 
 	if (isset($_SESSION['login'])) {
-		echo('<a href="formDisciplinas.php">Incluir Nova Disciplina</a>');
+		echo('<a href="formDisciplina.php">Incluir Nova Disciplina</a>');
 
 	}
 	?>

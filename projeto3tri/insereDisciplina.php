@@ -8,9 +8,11 @@ if(isset($_SESSION['login'])){
 	$cod = $_POST['codigo'];
 	$nome = $_POST['nome'];
 	
-	$verifica = verificaCod($cod);
-	
-
+	if(existeCod($cod)){
+		echo "<h1>Código Já existe</h1>";
+		echo ('<meta http-equiv="refresh" content="3;url=listaAlunos.php?ativo=colegas">');
+	}else{
+		
 
 	$linha = $codigo.",".$nome;
 
@@ -22,6 +24,10 @@ if(isset($_SESSION['login'])){
 	fwrite($arquivo, "\n".$linha);
 	//fecha o arquivo
 	fclose($arquivo);
+
+	}
+	
+
 
 
 
