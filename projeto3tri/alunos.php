@@ -116,17 +116,20 @@ function verificaCod($cod){
 	foreach ($dados as $posicao => $linha) {
 		if($posicao != 0){
 			$colunas = explode(",", $linha);
-		if ($colunas[0]) == $cod {
-			echo ("<h2><b>Disciplina já existente, por favor tente de novo</b></h2>");
-			echo ('<meta http-equiv="refresh" content="3;url=listaDisciplinas.php?ativo=disciplina">');
-			
+		if($colunas[0] == $cod){
+			$verifica = 1;
+		}else{
+			$verifica = 2;	
 		}
+			
+			
 
+		}
+		
 	}
+	return $verifica;
 }
 
+//$teste = verificaCod(1);
 
-
-
-
-
+//print($teste);

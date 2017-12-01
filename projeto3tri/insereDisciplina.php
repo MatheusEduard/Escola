@@ -7,7 +7,8 @@ if(isset($_SESSION['login'])){
 
 	$cod = $_POST['codigo'];
 	$nome = $_POST['nome'];
-	verificaCod($cod);
+	
+	$verifica = verificaCod($cod);
 	
 
 
