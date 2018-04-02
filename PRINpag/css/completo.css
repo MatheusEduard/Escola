@@ -16,8 +16,8 @@ img{
 }
 
 #nome_site{
-	margin-top: 2%;	
-	width: 85%;
+	margin-top: 8%;	
+	width: 70%;
 	float: left;
 }
 
@@ -62,7 +62,18 @@ a{
 
 #barraPesq{
 	border-radius: 10px;
+	width: 70%;
 }
+
+#botao{
+	border-radius: 10px;
+}
+
+#formulario{
+	margin-left: 90%;
+	padding-top: 5%;
+}
+
 
 .item.menu:hover{
 	background-color: #ccc;
@@ -112,3 +123,44 @@ a{
 	font-size: 35px;
     margin-left: 9%;
 }
+
+#tamanhobarra1{
+	border-radius: 30px;
+	float: left; 
+}
+
+#tamanhobarra2{
+	border-radius: 30px;
+	float: left;
+	margin-top: 4%;
+ 
+}
+#login{
+	float: left;
+	width: 20%;
+}
+#senha{
+	margin-top: 5%;
+	float: left;
+	width: 20%;
+}
+
+#enviar{
+	margin-top: 10%;
+	border-radius: 30px;
+	background-color: white;
+	float: right;
+	margin-right: 50%;
+
+}
+
+.login{
+	width: 80%;
+	float: left;
+}
+
+.senha{
+	width: 80%;
+	float: left;
+}
+
