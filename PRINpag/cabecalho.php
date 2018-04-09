@@ -8,7 +8,7 @@
 	<!-- cabeçalho -->
 	<header>
 		<img src="imagens/logo.png" id="logo"/>
-		<h1 id="nome_site">Taverna do Dragão</h1>
+		<h2 id="nome_site">Taverna do Dragão</h2>
 
 
 		<form method="post" action="login.php">
@@ -32,11 +32,11 @@
 	<!-- menu -->
 	
 	<nav class="menu">
-		<a href=""><section class="item menu">Home</section></a>
+		<a href=""><section class="item menu ativo">Home</section></a>
 		<a href=""><section class="item menu">Jogos</section></a>
 		<a href=""><section class="item menu">Conquistas</section></a>
 		<a href=""><section class="item menu">Reviews</section></a>
-		<a href=""><section class="item menu ativo">Ajuda</section></a>
+		<a href=""><section class="item menu">Ajuda</section></a>
 		<section class="itemPesq menu"><input type="text" id="barraPesq"> <input type="button" value="Procurar" id="botao"></section>
 
 	</nav>
