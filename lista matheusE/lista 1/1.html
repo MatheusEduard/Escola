@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 1</title>
+    <script type="text/javascript">
+        var valor = 170;
+        var valorPago = prompt("Insira o valor que deseja pagar:");
+        var diferenca = valor - valorPago;
+        if(diferenca < 0) {
+            var modulo = diferenca * -1;
+            alert("A diferença do valor original com o proposto é R$" + modulo + " de lucro");
+        }else if(diferenca > 0){
+            var modulo = diferenca;
+            alert("A  diferença do valor original com o proposto é R$" + modulo + " de prejuízo");
+        }else{
+            alert("É o mesmo preço");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
